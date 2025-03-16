@@ -1,0 +1,16 @@
+torch
+transformers
+numpy
+scikit-learn
+datasets
+conllu
+argparse
+
+
+
+# If you are using a specific version of torch that supports your CUDA version (12.1), you may need to install it accordingly. For example:
+#pip install torch --index-url https://download.pytorch.org/whl/cu121
+
+# Then, generate the requirements.txt file by running:
+# pip freeze > requirements.txt
+
