@@ -17,7 +17,7 @@ Welcome to the **POS Tagging Fine-tuning Repository**! This project fine-tunes t
 
 ## 📂 Repository Structure
 ```
-├── 📝 gradual_finetune.   → Fine-tuning with gradual unfreezing  
+├── 📝 gradual_finetune.py   → Fine-tuning with gradual unfreezing  
 ├── ⚡ normal_finetune.py    → Standard fine-tuning method  
 ├── 📦 requirements.txt      → All dependencies listed here  
 ├── 📁 dataset/              → Store your dataset files here  
