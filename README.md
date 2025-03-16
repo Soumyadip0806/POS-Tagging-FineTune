@@ -91,15 +91,6 @@ python gradual_finetune.py \
 
 ---
 
-## 📌 Key Features
-✅ Supports **POS tagging** using transformer-based models (e.g., BERT, XLM-R, MURIL)  
-✅ Uses **CoNLL-U format datasets**  
-✅ Implements **label alignment** for subword tokenization  
-✅ **Gradual unfreezing** method to fine-tune large models efficiently  
-✅ **Custom learning rates** for different model components  
-✅ **Evaluation metrics** including accuracy & classification report  
-
----
 
 ## 📜 Requirements
 The following packages are required:
