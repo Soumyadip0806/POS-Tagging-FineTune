@@ -1,11 +1,19 @@
 # 🏷️ POS Tagging Fine-Tuning with Transformers
 
-This repository provides two different approaches for fine-tuning transformer models for **POS tagging** using the **CoNLL-U** format dataset:
+Welcome to the **POS Tagging Fine-tuning Repository**! This project fine-tunes transformer-based models for **Part-of-Speech (POS) tagging** using **CoNLL-U formatted datasets**. We provide two training approaches:  
 
-1. **Standard Fine-Tuning** 🎯 - A typical method for training a POS tagging model.
-2. **Gradual Unfreezing Fine-Tuning** 🧊➡🔥 - A method that gradually unfreezes model layers during training to improve learning stability.
+✅ **Standard Fine-tuning** – Trains the model normally.  
+🔥 **Gradual Unfreezing Fine-tuning** – Gradually unfreezes layers for better adaptation. 
+
+
+## 📌 Features  
+- 🏗 Supports **any transformer-based model** from Hugging Face 🤗.  
+- 📖 Reads data in **CoNLL-U format**.  
+- 🚀 **Gradual unfreezing** for stable training.  
+- 📊 Computes **accuracy & classification reports**.  
 
 ---
+
 
 ## 📂 Repository Structure
 ```
@@ -34,7 +42,10 @@ The dataset must be in **CoNLL-U format** and should contain sentences with thei
 6	.	_	PUNCT	_	_	_	_	_	_
 ```
 
-Place your dataset files in the `dataset/` directory.
+
+## 📄 Download the Dataset
+### 📥 You can find the actual dataset here:
+### 🔗 Dataset Link
 
 ---
 
@@ -52,7 +63,7 @@ Place your dataset files in the `dataset/` directory.
 ```
 
 ### 3️⃣ Run Fine-Tuning Scripts
-#### ➤ **Standard Fine-Tuning**
+#### 🏃‍♂️ **Standard Fine-Tuning**
 ```bash
 python normal_finetune.py \
     --train_file ./dataset/train.conllu \
@@ -65,7 +76,7 @@ python normal_finetune.py \
     --learning_rate 2e-5
 ```
 
-#### ➤ **Gradual Unfreezing Fine-Tuning**
+#### 🔥 **Gradual Unfreezing Fine-Tuning**
 ```bash
 python gradual_finetune.py \
     --train_file ./dataset/train.conllu \
